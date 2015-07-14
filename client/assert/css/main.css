@@ -1,0 +1,390 @@
+html,
+body,
+h1,
+h2,
+h3,
+p,
+form,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+  margin: 0;
+  font-family: Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  background-color: white;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.output{
+	padding-left: 45px;
+}
+
+.font2, body.reader-font2 input, body.reader-font2 select, body.reader-font2 textarea, body.reader-font2 .main .kalamu-area, body.reader-font2 .main .markdown .text {
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.navbar {
+	overflow: visible;
+	margin-bottom: 20px;
+}
+
+.navbar-jianshu{
+	position:fixed;
+	width:45px;
+	z-index: 1049;
+	-webkit-backface-visibility:hidden;
+}
+.expanded{
+	left:0;
+	top:0;
+	background-color: #2a2a2a;
+	height:100%;
+}
+
+.dropup, .dropdown{
+	position:relative;
+}
+
+.expanded .dropdown a:hover, .expanded .dropdown a:active, .expanded .dropdown a.active {
+  background-color: #e78170;
+  color: white;
+  text-shadow: 0 1px 0 #de533a;
+}
+
+.navbar-jianshu a.logo {
+  font-size: 18px;
+  color: white;
+}
+
+
+.expanded a.logo b {
+  font-weight: normal;
+}
+
+.navbar-jianshu a {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.expanded .dropdown span {
+  display: none;
+}
+
+.expanded a {
+  color: #999999;
+  text-shadow: 0 1px 0 black;
+}
+
+.expanded .dropdown a:hover {
+  background-color: #f49484;
+}
+
+
+.navbar-user {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  margin-bottom: 0;
+  z-index: 1010;
+}
+
+a {
+  color: #555555;
+  text-decoration: none;
+}
+
+.navbar-user .login, .wrap-btn .login {
+  position: relative;
+  top: 7px;
+  float: right;
+  padding: 0 2px;
+  margin-right: 8px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: 940px;
+}
+
+.login-page, .login-modal {
+  padding: 125px 0 50px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.login-page .logo img, .login-modal .logo img {
+  width: 252px;
+}
+
+.login-page .title, .login-modal .title {
+  margin: 70px auto 50px;
+  border-bottom: 1px solid #eeeeee;
+  color: #b1b1b1;
+}
+
+.login-page .title span, .login-modal .title span {
+  position: relative;
+  top: 10px;
+  padding: 0 30px;
+  background: white;
+}
+.login-page, .login-modal {
+  padding: 125px 0 50px;
+  text-align: center;
+}
+
+.login-page form, .login-modal form {
+  width: 300px;
+  padding-bottom: 40px;
+  margin: 0 auto 25px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.login-page .input-prepend .add-on, .login-modal .input-prepend .add-on {
+  width: 34px;
+  height: 34px;
+  background: none;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-append .add-on, .input-prepend .add-on {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+}
+
+.input-append, .input-prepend {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+button[data-color=blue]:hover, button[data-color=blue]:focus {
+  color: white;
+  border-color: #3dbcf5;
+  background-color: #3dbcf5;
+}
+.login-page .submit-button, .login-modal .submit-button {
+  width: 100%;
+}
+
+.ladda-button[data-color=blue] {
+  background: #049cdb;
+}
+
+.ladda-button .ladda-label {
+  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  -moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  -ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  -o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+}
+
+.ladda-button .ladda-label {
+  position: relative;
+  z-index: 3;
+}
+
+.ladda-button {
+  background: #666;
+  border: 0;
+  padding: 14px 18px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.login-page .input-prepend input, .login-modal .input-prepend input {
+  width: 228px;
+  width: calc(100% - 44px);
+  height: 44px;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  border:1px solid #CCCCCC;
+ border-left:0px;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="search"]:focus, a:focus, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+  border-color: rgba(82,168,236,0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+}
+
+.input-append .add-on, .input-prepend .add-on {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+}
+
+
+.login-page .input-prepend, .login-modal .input-prepend {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-page .sign-in .control-group, .login-modal .sign-in .control-group {
+  width: 100%;
+  margin: 15px 0 0;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.login-page .sign-in .control-group a, .login-modal .sign-in .control-group a {
+  float: right;
+}
+
+.login-page .sign-in .icheckbox_minimal, .login-modal .sign-in .icheckbox_minimal {
+  top: -2px;
+  display: inline-block;
+}
+
+.icheckbox_minimal.checked {
+  background-position: -40px 0;
+}
+.icheckbox_minimal, .iradio_minimal {
+  display: inline-block;
+  display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background: url("../img/minimal.png") no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.login-page .login-sns, .login-modal .login-sns {
+  margin-left: 0;
+}
+
+.login-page .login-sns p, .login-modal .login-sns p {
+  margin-bottom: 15px;
+  color: #999999;
+}
+p {
+  margin: 0 0 10px;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+.login-page .login-sns li, .login-modal .login-sns li {
+  display: inline-block;
+}
+
+li {
+  line-height: 20px;
+}
+
+.login-page .login-sns li>a, .login-modal .login-sns li>a {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 44px;
+  font-size: 20px;
+  background: #eeeeee;
+}
+
+
+.login-page .title span .active, .login-modal .title span .active {
+  color: #555555;
+}
+
+.login-page .title span a, .login-modal .title span a {
+  color: #b1b1b1;
+  font-size:18px;
+}
+
+.login-page .title b, .login-modal .title b {
+  margin: 0 10px;
+}
+
+
+button[data-color=green] {
+  color: white;
+  border-color: #49be38;
+  background: #49be38;
+}

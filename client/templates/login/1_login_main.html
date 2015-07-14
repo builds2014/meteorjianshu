@@ -1,0 +1,38 @@
+<template name="login_main">
+
+    <div class="navbar-user">
+        <a class="login" data-signup-link="true" data-toggle="modal" href="/sign_up">
+            <i class="fa fa-user"></i> 注册
+        </a>
+        <a class="login" data-signin-link="true" data-toggle="modal" href="/sign_in">
+            <i class="fa fa-sign-in"></i> 登录
+        </a>
+    </div>
+
+
+    <div class="navbar navbar-jianshu expanded">
+        <div class="dropdown">
+            <a class="active logo" role="button" data-original-title="个人主页" data-container="div.expanded" href="/">
+                <b>简</b><span class="title">首页</span>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" data-original-title="专题" data-container="div.expanded" href="/collections">
+                <i class="fa fa-th"></i><span class="title">专题</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="login-page">
+            <div class="logo">
+                <img src="http://static.jianshu.io/assets/img_logo-e6e1a310e5d35eadb63c29f990e289d6.png" alt="Img logo">
+            </div>
+            {{> yield "handle"}}
+        </div>
+
+    </div>
+
+
+
+
+</template>
